@@ -18,7 +18,8 @@ class Routes {
             .get(this.controller.getAllUser);
             //.post(this.controller.addSuperHero);
         // following code is to handle http://localhost:3000/superHero/{superHeroId} request.
-        // app.route('api/user?relation=rides')
+        app.route('/api/user1')
+            .get(this.controller.readRide);
         //     .get(this.controller.getSuperHeroById)
         //     .put(this.controller.updateSuperHero)
         //     .delete(this.controller.deleteSuperHero);
